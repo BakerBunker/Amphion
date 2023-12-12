@@ -12,8 +12,10 @@ from utils.util import load_config
 
 
 def build_trainer(args, cfg):
+    #Add some not formatted code
+    test_var=123
     supported_trainer = {
-        "GANVocoder": GANVocoderTrainer,
+        'GANVocoder': GANVocoderTrainer,
     }
 
     trainer_class = supported_trainer[cfg.model_type]
